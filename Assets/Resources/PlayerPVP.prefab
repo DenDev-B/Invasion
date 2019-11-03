@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3618447643460157716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3618447643460157719}
+  - component: {fileID: 3618447643460157712}
+  - component: {fileID: 3618447643460157713}
+  - component: {fileID: 3618447643460157718}
+  - component: {fileID: 3618447643460157715}
+  - component: {fileID: 3618447643460157714}
+  - component: {fileID: 3618447643460157724}
+  - component: {fileID: 3618447643460157725}
+  - component: {fileID: 6346562520201797184}
+  m_Layer: 0
+  m_Name: PlayerPVP
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3618447643460157719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4416586, y: 0.9853549, z: 5.78707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3618447643460157712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3618447643460157713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22dc5a597f7447744ae2f5b73303a489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3618447643460157716}
+  inventar:
+  - item: {fileID: 1173315933482256664, guid: beeb87c2ff7c9244c9f216c54cf5340e, type: 3}
+    count: 60
+  view: {fileID: 0}
+  life: {fileID: 0}
+  maxOD: 7
+  od: 0
+  parent: {fileID: 3618447643460157719}
+  viewHero: Bodyguard
+  playerName: 
+  photonID: 0
+  weapon: {fileID: 0}
+  parentWeapon: {fileID: 0}
+  weaponActive: 0
+  nameWeaponLeft: M4V2
+  nameWeaponRight: AK47V2
+  viewWeaponLeft: {fileID: 0}
+  viewWeaponRight: {fileID: 0}
+  comanda: 0
+  curTarget: {fileID: 0}
+--- !u!65 &3618447643460157718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3618447643460157715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4cebcf8caefb249bf19cd510ed6f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedData:
+    dist: {x: 0, y: 0, z: 0}
+    activ: 0
+    welk: 0
+    welking: 0
+    fire: 0
+    stop: 0
+    died: 0
+--- !u!114 &3618447643460157714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1610e59c135f6d409d947e6750c3670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventar: {fileID: 0}
+  container: {fileID: 0}
+  cellView: {fileID: 0}
+  heroPanel: {fileID: 0}
+  cellCount: 0
+--- !u!114 &3618447643460157724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bba6ea64f2756b42a8bcd7c7000398e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 0
+  full_life: 20
+  offset: {x: 0, y: 0, z: 0}
+  HP_Slider: {fileID: 0}
+  go: {fileID: 3618447643460157716}
+  lifeView: {fileID: 0}
+  canvas: {fileID: 0}
+--- !u!114 &3618447643460157725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 4
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 6346562520201797184}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
+--- !u!114 &6346562520201797184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618447643460157716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c69605d4a41834b9d7d8de5fb888a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Visual: {fileID: 3618447643460157716}
+  camera: {fileID: 0}
+  InterpolationBackTime: 0.1
